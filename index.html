@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon"></link>
+    <title>js practice</title>
+  </head>
+  <body>
+    <section>
+      <div class="header">
+        <h1>Invoice creator</h1>
+        <p>Thanks for choosing GoodCrop, LLC!</p>
+      </div>
+      <main>
+        <div class="container"></div>
+        <div class="detail-header">
+          <p>TASK</p>
+          <p>total</p>
+        </div>
+        <div id="items">
+          <div class="row">
+            <h3></h3>
+            <span class="remove"></span>
+            <h3 id="total-el"><span></span></h3>
+          </div>
+        </div>
+        <hr />
+        <div class="footer">
+          <div class="left-box">
+            <p>NOTES</p>
+            <p>we accept cash, credit, or PayPal</p>
+          </div>
+          <div class="right-box">
+            <p>TOTAL AMOUNT</p>
+            <p id="total">$0</p>
+          </div>
+        </div>
+        <div>
+          <button id="send-invoice">send invoice</button>
+        </div>
+      </main>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,121 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+  background-color: rgb(206, 197, 197);
+}
+section {
+  width: 800px;
+  max-width: 95vw;
+  padding: 0.5rem;
+  border-radius: 8px;
+  margin: 15vh auto;
+  background-color: #fff;
+}
+
+/*header of the invoice*/
+.header {
+  background-color: rgba(64, 64, 238, 0.856);
+  color: #fff;
+  text-align: center;
+  padding: 3rem;
+  border-radius: 8px 8px 0 0;
+}
+.header h1 {
+  font-size: 40px;
+  margin-bottom: 1rem;
+}
+main {
+  background-color: rgba(27, 31, 66, 0.938);
+  border-radius: 0 0 8px 8px;
+  padding: 3rem 2rem;
+}
+
+/* buttons style*/
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+.container button {
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  font-size: 15px;
+  text-transform: capitalize;
+  display: block;
+  cursor: pointer;
+}
+.container button:active {
+  transform: translateY(2px);
+}
+
+/*center content ; detail of invoice*/
+.detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5rem 0;
+  color: rgb(206, 197, 197);
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+  color: #fff;
+}
+h3 span {
+  color: rgb(206, 197, 197);
+}
+.remove {
+  font-size: 10px;
+  margin-left: 1rem;
+  cursor: pointer;
+  text-decoration: underline;
+}
+#total-el {
+  flex: 1;
+  text-align: right;
+}
+
+/* footer desigin*/
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0 2rem;
+  color: rgb(206, 197, 197);
+}
+.footer p {
+  margin: 0.5rem 0 1rem;
+}
+.footer #total {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* send invoice button*/
+#send-invoice {
+  width: 100%;
+  background-color: rgba(64, 64, 238, 0.856);
+  border: none;
+  border-radius: 8px;
+  padding: 1rem;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  transition: 0.4s;
+}
+#send-invoice:hover {
+  background-color: rgba(35, 35, 128, 0.856);
+}
+.red {
+  color: red;
+}
